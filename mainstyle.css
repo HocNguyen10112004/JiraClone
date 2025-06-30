@@ -23,3 +23,18 @@ aside {
   max-height: 80vh;       
   max-width: 100vw;  
 }
+body {
+  font-family: 'Inter', sans-serif;
+}
+* {
+  color: #44546F;
+}
+h1{
+  color: black
+}
+.container-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+

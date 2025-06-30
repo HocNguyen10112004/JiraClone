@@ -22,6 +22,11 @@
       <nav id="main-nav">
         <ul>
           <li>
+            <button>
+              <i class="fas fa-th"></i>
+            </button>
+          </li>
+          <li>
             <a href="">
               <img
                 class="icon"
@@ -47,7 +52,7 @@
             </select>
           </li>
           <li>
-            <select  class="nav-item" id="dashboard">
+            <select class="nav-item" id="dashboard">
               <option value="">DashBoards</option>
             </select>
           </li>
@@ -69,9 +74,8 @@
           <li>
             <button class="create" id="createNav">Create</button>
           </li>
-          <div style="width: 40%"></div>
+          <div id="gap-nav"></div>
           <li>
-            <i class="fas fa-search"></i>
             <input type="text" placeholder="Search" />
           </li>
           <li>
@@ -119,10 +123,8 @@
           <ul class="sidebar-list">
             <li>
               <a class="sidebar-item" href="#">
-                <i class="fas fa-columns"></i>
-                <select name="" id="">
-                  <option value="">Scrum: Teams in S...Board</option>
-                </select>
+                <i class="fas fa-columns"></i
+                ><span>Scrum: Teams in S...Board</span>
               </a>
             </li>
             <li>
@@ -180,6 +182,7 @@
       </aside>
 
       <section>
+        <p id="project-title">Project / Magento-LATAM</p>
         <div id="top-content">
           <h1>Board</h1>
           <div class="container">
@@ -189,7 +192,6 @@
         </div>
         <div class="container-space-between">
           <div>
-            <i class="fas fa-search"></i>
             <input type="text" placeholder="Search" />
             <select name="Quick Filters" id="quickfilter">
               <option value="">Quick Filters</option>
@@ -197,9 +199,9 @@
           </div>
           <div>
             <input id="columnName" type="text" placeholder="Column Name" />
-          <button id="add-column" class="create">
-            <i class="fas fa-plus"></i> Thêm mới
-          </button>
+            <button id="add-column" class="create">
+              <i class="fas fa-plus"></i> Thêm mới
+            </button>
           </div>
         </div>
         <div id="main-content">

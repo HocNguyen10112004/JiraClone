@@ -8,23 +8,25 @@ header nav ul {
   list-style: none;
   gap: 1%;
   padding: 10px 20px;
-  background-color: #f5f5f5;
+  background-color: white;
 }
 header nav li {
   display: flex;
 }
-
+#gap-nav{
+  width: 40%;
+}
 select {
   padding: 5px 10px;
   font-size: 14px;
   border-style: none;
-  background-color: #f5f5f5;
+  background-color: white;
 }
 
 input[type="text"] {
   padding: 6px 10px;
   font-size: 14px;
-  border: 1px solid black;
+  border: 1px solid #b7b9bd;
   border-radius: 4px;
 }
 button.create {
@@ -34,4 +36,16 @@ button.create {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+header nav ul li button{
+  border:none;
+  background-color: white;
+  object-fit: cover;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+header nav ul li button i{
+  background-color: white;
+  font-size: 18px; 
 }
