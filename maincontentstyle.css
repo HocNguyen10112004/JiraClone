@@ -1,0 +1,82 @@
+#top-content {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+}
+section {
+  padding-left: 2%;
+}
+#medium-content {
+  padding-bottom: 200px;
+}
+label {
+  display: block;
+  margin: 5%;
+}
+.project-logo{
+  height: 40px;
+  width: 40px;
+  margin-bottom: 2vh;
+  margin-right: 0.5vw;
+  margin-left: -0.5vw;
+}
+.project-header{
+  display: flex;
+}
+
+.task i.fa-check-square {
+  color: cyan;
+}
+
+.task i.fa-arrow-up {
+  color: red;
+}
+.content-task{
+  background-color: yellow;
+}
+textarea {
+  overflow: hidden;              
+  height: 70px;
+  width: 100%;
+  background-color: #fafafa;
+  border: none;
+  margin-bottom: 10px;
+}
+.footer-task{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+button#release{
+  background-color: #ddd;
+  border: none;
+  padding: 5%;
+}
+
+.column {
+  width: 20%;
+  background-color: #f5f5f5;
+  flex-shrink: 0;
+  min-height: 80vh;
+  height: 100%;
+}
+
+.task {
+  height: 150px;
+  border-bottom: 1px solid grey;
+  border-radius: 5%;
+  background-color:white;
+  margin-bottom: 16px;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 3%;
+  word-wrap: break-word;   
+  overflow-wrap: break-word;
+}
+
+.fa-trash-alt{
+  color: red;
+  margin-top: 1vh;
+  margin-right: 1vw;
+}

@@ -1,0 +1,77 @@
+#sidebar {
+  width: 15%;
+  background-color: #f4f4f4;
+  padding: 16px;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+}
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+section {
+  width: 100%;
+  padding-right: 1%;
+}
+
+.fa-search {
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+}
+
+.icon {
+  height: 16px;
+  width: 16px;
+  object-fit: contain;
+}
+#sidebar ul li a {
+  color: black;
+}
+#sidebar ul li a i {
+  padding-right: 10px;
+}
+
+#sidebar li {
+  padding-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+/* hide sidebar */
+#sidebar {
+  transition: width 0.3s ease;
+}
+
+#sidebar.collapsed {
+  width: 60px;
+}
+
+#sidebar.collapsed .sidebar-item span,
+#sidebar.collapsed .project-title,
+#sidebar.collapsed .project-subtitle,
+#sidebar.collapsed select {
+  display: none;
+}
+
+#sidebar.collapsed .project-logo {
+  margin: 0 auto;
+}
+.fa-ellipsis-h {
+  margin: 10px;
+}
+.container-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+button#toggle-sidebar {
+  margin-bottom: 1vh;
+}
+
+.sidebar-item span:hover, .nav-item:hover {
+  color: blue;
+  text-decoration: underline;
+}
