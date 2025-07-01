@@ -9,6 +9,7 @@ header nav ul {
   gap: 1%;
   padding: 10px 20px;
   background-color: white;
+  overflow-x: auto;
 }
 header nav li {
   display: flex;
@@ -48,4 +49,30 @@ header nav ul li button{
 header nav ul li button i{
   background-color: white;
   font-size: 18px; 
+}
+
+/* --- Responsive cho màn hình nhỏ hơn 768px --- */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  #gap-nav {
+    display: none; /* ẩn khoảng trống trên mobile */
+  }
+
+  input[type="text"],
+  select,
+  button.create {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  header nav ul li button {
+    width: 100%;
+    justify-content: center;
+  }
 }

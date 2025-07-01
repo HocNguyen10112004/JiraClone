@@ -1,8 +1,8 @@
 const columns = [
-  { label: "TO DO" },
-  { label: "IN PROGRESS" },
-  { label: "CODE REVIEW" },
-  { label: "DONE" },
+  { label: "TO DO", id: "todo" },
+  { label: "IN PROGRESS", id: "inprogress" },
+  { label: "CODE REVIEW", id: "codereview" },
+  { label: "DONE", id: "done" },
 ];
 document.addEventListener("DOMContentLoaded", () => {
   fetch("Items/column.html")
@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       columns.forEach(col => {
         const columnDiv = tempDiv.firstElementChild.cloneNode(true);
+        columnDiv.id = col.id;
         const label = columnDiv.querySelector("label");
         label.textContent = col.label;
 
