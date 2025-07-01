@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("columnsReady", () => {
   fetch("Items/task.html")
     .then((response) => {
       if (!response.ok) throw new Error("Không thể load file template");
@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
           tempDiv.innerHTML = templateHTML.trim();
           const taskElement = tempDiv.firstElementChild;
 
-          // ✅ Optional
           const textarea = taskElement.querySelector("textarea");
           // textarea.textContent = `Task ${i + 1} in ${id.toUpperCase()}`;
 

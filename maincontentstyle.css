@@ -6,7 +6,7 @@
 }
 section {
   padding-left: 2%;
-  height: 60%;
+  height: 50%;
 }
 #medium-content {
   padding-bottom: 200px;
@@ -38,7 +38,7 @@ button#release{
   width: 24%;
   background-color: #f5f5f5;
   flex-shrink: 0;
-  min-height: 80vh;
+  min-height: 70vh;
   height: 100%;
 }
 

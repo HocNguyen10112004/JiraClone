@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         container.appendChild(columnDiv);
       });
+      document.dispatchEvent(new Event("columnsReady"));
     })
     .catch(err => console.error("Lỗi khi load cột:", err));
 });

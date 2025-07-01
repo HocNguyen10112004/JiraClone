@@ -52,31 +52,41 @@ textarea {
 
 /* Responsive */
 @media screen and (max-width: 768px) {
-  textarea {
-    height: 50px;
-    font-size: 12px;
-  }
 
   .content-task {
-    font-size: 12px;
-  }
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;       /* Số dòng tối đa */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.4em;
+  max-height: calc(1.4em * 2); /* 2 dòng */
+}
+
 
   .footer-task {
     font-size: 12px;
     flex-direction: column;
-    gap: 6px;
+    height: fit-content;
   }
 
   .task {
     margin-left: 5px;
     margin-right: 5px;
-    padding: 2%;
+    height: 180px;
+    border: 1px solid black;
   }
 
   .fa-trash-alt {
     margin-top: 0.5vh;
     margin-right: 0.5vw;
   }
+  label{
+    height: 40px;
+  }
   
+
+
 }
 
