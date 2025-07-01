@@ -1,11 +1,11 @@
 textarea {
-  overflow: hidden;              
+  overflow: hidden;
   height: 60px;
   width: 100%;
   background-color: #fafafa;
   border: none;
   margin-bottom: 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .task i.fa-check-square {
   color: cyan;
@@ -14,19 +14,19 @@ textarea {
 .task i.fa-arrow-up {
   color: red;
 }
-.content-task{
+.content-task {
   background-color: yellow;
 }
 textarea {
-  overflow: hidden;              
+  overflow: hidden;
   height: 60px;
   width: 100%;
   background-color: #fafafa;
   border: none;
   margin-bottom: 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-.footer-task{
+.footer-task {
   padding-top: 10px;
   display: flex;
   justify-content: space-between;
@@ -35,35 +35,37 @@ textarea {
   height: 150px;
   border-bottom: 1px solid grey;
   border-radius: 5%;
-  background-color:white;
+  background-color: white;
   margin-bottom: 16px;
   margin-left: 2%;
   margin-right: 2%;
   padding: 3%;
-  word-wrap: break-word;   
+  word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
-.fa-trash-alt{
+.fa-trash-alt {
   color: red;
   margin-top: 1vh;
   margin-right: 1vw;
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
-
-  .content-task {
-  font-size: 12px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;       /* Số dòng tối đa */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 1.4em;
-  max-height: calc(1.4em * 2); /* 2 dòng */
+.fa-trash-alt:hover{
+    cursor: pointer;
 }
 
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .content-task {
+    font-size: 12px;
+    display: -webkit-box;
+    line-clamp: 2; /* Số dòng tối đa */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4em;
+    max-height: calc(1.4em * 2); /* 2 dòng */
+  }
 
   .footer-task {
     font-size: 12px;
@@ -82,11 +84,7 @@ textarea {
     margin-top: 0.5vh;
     margin-right: 0.5vw;
   }
-  label{
+  label {
     height: 40px;
   }
-  
-
-
 }
-
