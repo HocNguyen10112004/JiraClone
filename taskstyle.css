@@ -1,4 +1,5 @@
 textarea {
+  resize: none;
   overflow: hidden;
   height: 60px;
   width: 100%;
@@ -50,8 +51,10 @@ textarea {
   margin-right: 1vw;
 }
 
-.fa-trash-alt:hover{
-    cursor: pointer;
+.fa-trash-alt:hover,
+.fa-plus:hover {
+  transform: scale(1.3);
+  cursor: pointer;
 }
 
 /* Responsive */

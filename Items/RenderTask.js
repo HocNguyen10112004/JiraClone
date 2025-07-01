@@ -17,11 +17,10 @@ document.addEventListener("columnsReady", () => {
           tempDiv.innerHTML = templateHTML.trim();
           const taskElement = tempDiv.firstElementChild;
 
-          const textarea = taskElement.querySelector("textarea");
+          // const textarea = taskElement.querySelector("textarea");
           // textarea.textContent = `Task ${i + 1} in ${id.toUpperCase()}`;
-
-          const footer = taskElement.querySelector(".footer-task span:last-child");
-          if (footer) footer.textContent = `TIS-${columnIndex * 10 + i + 1}`;
+          // const footer = taskElement.querySelector(".footer-task span:last-child");
+          // if (footer) footer.textContent = `oo`;
 
           column.appendChild(taskElement);
         }
