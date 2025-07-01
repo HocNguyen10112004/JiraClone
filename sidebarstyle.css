@@ -72,7 +72,6 @@ button#toggle-sidebar {
 
 #sidebar ul li:hover, .nav-item:hover {
   background-color: rgb(196, 213, 246);
-  border-bottom: 1px solid darkgray;
-  border-top: 1px solid darkgray;
+  
   border-radius: 2%;
 }

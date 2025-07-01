@@ -1,10 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll(".fa-trash-alt").forEach((trashIcon) => {
-    trashIcon.addEventListener("click", function () {
-      const column = this.closest(".column");
+//Event Delegation
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("main-content");
+
+  container.addEventListener("click", (e) => {
+    if (e.target.classList.contains("fa-trash-alt")) {
+      const column = e.target.closest(".column");
       if (column) {
         column.remove();
       }
-    });
+    }
   });
 });
