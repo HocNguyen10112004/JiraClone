@@ -7,7 +7,7 @@ document.addEventListener("columnsReady", () => {
     .then((templateHTML) => {
       // Lặp qua các column (giả sử chúng đã có id từ trước như 'todo', 'inprogress', ...)
       const columnIds = ["todo", "inprogress", "codereview", "done"];
-      
+
       columnIds.forEach((id, columnIndex) => {
         const column = document.getElementById(id);
         if (!column) return;

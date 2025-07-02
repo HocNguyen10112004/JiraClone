@@ -91,3 +91,8 @@ textarea {
     height: 40px;
   }
 }
+/* Thêm viền khi phần tử đang kéo */
+.task.dragging {
+  border: 2px solid #000; /* Thêm viền đen */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ */
+}

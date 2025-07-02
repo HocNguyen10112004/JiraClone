@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="navstyle.css" />
     <link rel="stylesheet" href="sidebarstyle.css" />
     <link rel="stylesheet" href="maincontentstyle.css" />
-    <link rel="stylesheet" href="taskstyle.css">
-    <link rel="stylesheet" href="popupstyle.css">
+    <link rel="stylesheet" href="taskstyle.css" />
+    <link rel="stylesheet" href="popupstyle.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -20,6 +20,8 @@
     <script src="features/ShowPopup.js"></script>
     <script src="features/TaskDetail.js"></script>
     <script src="features/UpdateTask.js"></script>
+    <script src="features/CreateNavItem.js"></script>
+    <script src="features/ChangeStatus.js"></script>
     <script src="Items/RenderNavItems.js"></script>
     <script src="Items/RenderSidebarItems.js"></script>
     <script src="Items/RenderCoumn.js"></script>
@@ -48,7 +50,8 @@
           <li>
             <button class="create" id="createNav">Create</button>
           </li>
-          <div id="gap-nav"></div>
+          <!-- <div id="gap-nav"></div> -->
+          <input type="text" name="" id="gap-nav" />
           <li>
             <input type="text" placeholder="Search" />
           </li>
@@ -78,7 +81,6 @@
 
     <main>
       <aside id="sidebar">
-        
         <div class="container">
           <img
             alt="Teams in Space logo"
