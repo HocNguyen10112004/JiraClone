@@ -1,4 +1,5 @@
 textarea {
+  resize: none;
   overflow: hidden;
   height: 60px;
   width: 100%;
@@ -50,8 +51,10 @@ textarea {
   margin-right: 1vw;
 }
 
-.fa-trash-alt:hover{
-    cursor: pointer;
+.fa-trash-alt:hover,
+.fa-plus:hover {
+  transform: scale(1.3);
+  cursor: pointer;
 }
 
 /* Responsive */
@@ -87,4 +90,9 @@ textarea {
   label {
     height: 40px;
   }
+}
+/* Thêm viền khi phần tử đang kéo */
+.task.dragging {
+  border: 2px solid #000; /* Thêm viền đen */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ */
 }

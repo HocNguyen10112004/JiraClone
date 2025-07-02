@@ -60,9 +60,7 @@ header nav ul li button i{
     padding: 10px;
   }
 
-  #gap-nav {
-    display: none; /* ẩn khoảng trống trên mobile */
-  }
+  
 
   input[type="text"],
   select,

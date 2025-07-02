@@ -7,7 +7,7 @@ document.addEventListener("columnsReady", () => {
     .then((templateHTML) => {
       // Lặp qua các column (giả sử chúng đã có id từ trước như 'todo', 'inprogress', ...)
       const columnIds = ["todo", "inprogress", "codereview", "done"];
-      
+
       columnIds.forEach((id, columnIndex) => {
         const column = document.getElementById(id);
         if (!column) return;
@@ -17,11 +17,10 @@ document.addEventListener("columnsReady", () => {
           tempDiv.innerHTML = templateHTML.trim();
           const taskElement = tempDiv.firstElementChild;
 
-          const textarea = taskElement.querySelector("textarea");
+          // const textarea = taskElement.querySelector("textarea");
           // textarea.textContent = `Task ${i + 1} in ${id.toUpperCase()}`;
-
-          const footer = taskElement.querySelector(".footer-task span:last-child");
-          if (footer) footer.textContent = `TIS-${columnIndex * 10 + i + 1}`;
+          // const footer = taskElement.querySelector(".footer-task span:last-child");
+          // if (footer) footer.textContent = `oo`;
 
           column.appendChild(taskElement);
         }

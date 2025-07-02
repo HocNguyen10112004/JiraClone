@@ -3,30 +3,27 @@ document.addEventListener("DOMContentLoaded", function () {
   const mainContent = document.getElementById("main-content");
 
   addButton.addEventListener("click", function () {
-    const newColumn = document.createElement("div");
-    newColumn.className = "column";
+    const columnNameInput = document.getElementById("columnName");
+    const columnName = columnNameInput.value.trim();
+    if (!columnName) return;
 
-    const headerContainer = document.createElement("div");
-    headerContainer.className = "container-space-between";
+    fetch("Items/column.html")
+      .then((response) => {
+        if (!response.ok) throw new Error("Không thể load file template");
+        return response.text();
+      })
+      .then((templateHTML) => {
+        const tempDiv = document.createElement("div");
+        tempDiv.innerHTML = templateHTML.trim();
+        const columnDiv = tempDiv.firstElementChild.cloneNode(true);
 
-    const label = document.createElement("label");
-    const ColumnName = document.getElementById("columnName");
-    label.textContent = ColumnName.value;
+        columnDiv.id = columnName.toLowerCase().replace(/\s+/g, "-");
+        const label = columnDiv.querySelector("label");
+        if (label) label.textContent = columnName;
 
-    const deleteIcon = document.createElement("i");
-    deleteIcon.className = "fas fa-trash-alt";
-    deleteIcon.style.cursor = "pointer";
-
-    deleteIcon.addEventListener("click", function () {
-      newColumn.remove();
-      
-    });
-
-    headerContainer.appendChild(label);
-    headerContainer.appendChild(deleteIcon);
-
-    newColumn.appendChild(headerContainer);
-    mainContent.appendChild(newColumn);
-    ColumnName.value = "";
+        mainContent.appendChild(columnDiv);
+        columnNameInput.value = "";
+      })
+      .catch((err) => console.error("Lỗi khi load cột:", err));
   });
 });
